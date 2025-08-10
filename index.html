@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timngume Marinette Mbel • DevOps Engineer</title>
+  <meta name="description" content="DevOps portfolio of Timngume Marinette Mbel — Linux, CI/CD, Terraform, Containers." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">TM</div>
+        <div>
+          <h1 class="name">Timngume Marinette Mbel</h1>
+          <p class="tagline">DevOps Engineer • RHCSA • Linux • CI/CD • Terraform • Containers</p>
+        </div>
+      </div>
+      <button id="themeToggle" class="btn-outline" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>I build reliable infrastructure & smooth deployments.</h2>
+          <p class="lead">
+            RHCSA-certified Linux admin focused on automation, observability, and secure-by-default systems.
+            I use GitHub Actions, Terraform, and containers to ship stable apps—fast.
+          </p>
+          <div class="cta-row">
+            <a class="btn-solid" href="#projects">View Projects</a>
+            <a class="btn-outline" href="#contact">Contact</a>
+          </div>
+          <ul class="quick-facts">
+            <li>📍 Yaoundé, Cameroon</li>
+            <li>📧 timngumemarinette05@gmail.com</li>
+            <li>📱 +237 653 478 373</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <div class="stat">
+            <div class="stat-number">RHEL 9</div>
+            <div class="stat-label">RHCSA</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">CI/CD</div>
+            <div class="stat-label">GitHub Actions</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">IaC</div>
+            <div class="stat-label">Terraform</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">Containers</div>
+            <div class="stat-label">Podman/Docker</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Linux First</h3>
+          <p>Systemd, SELinux, firewalld, SSH hardening, storage, backups, quotas, and service troubleshooting.</p>
+        </div>
+        <div class="card">
+          <h3>Automation</h3>
+          <p>CI/CD pipelines, scripted rollouts, health checks, logs, and alerts for reliable deploys.</p>
+        </div>
+        <div class="card">
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform to provision repeatable environments, with security groups and user_data bootstraps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project">
+            <div class="project-head">
+              <h3>DevOps Starter Lab</h3>
+              <span class="pill">CI/CD</span>
+              <span class="pill">Terraform</span>
+              <span class="pill">AWS EC2</span>
+            </div>
+            <p>
+              A hands-on lab demonstrating GitHub Actions for CI/CD, Terraform for EC2 provisioning in <code>eu-north-1</code>,
+              and Apache auto-configuration with <code>user_data</code>. Outputs expose the instance public IP, URL, and SSH command.
+            </p>
+            <ul class="project-bullets">
+              <li>✅ Free Tier t3.micro with security group (SSH/HTTP)</li>
+              <li>✅ Auto-install Apache and serve a landing page</li>
+              <li>✅ Terraform outputs for quick access (URL, SSH)</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn-outline" href="https://github.com/your-username/devops-starter-lab" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project">
+            <div class="project-head">
+              <h3>Linux Services Hardening</h3>
+              <span class="pill">RHEL 9</span>
+              <span class="pill">Security</span>
+            </div>
+            <p>
+              Hardening SSH with key-based auth, SELinux enforcing mode, firewall zones, and service audits. Includes reusable scripts
+              for user management, backups, and service health checks.
+            </p>
+            <ul class="project-bullets">
+              <li>🔐 SSH keys + fail-safe configs</li>
+              <li>🧰 SELinux contexts & troubleshooting</li>
+              <li>🧯 Systemd recovery and journald log analysis</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <div class="project-head">
+              <h3>Containerized App Demo</h3>
+              <span class="pill">Containers</span>
+              <span class="pill">Podman</span>
+            </div>
+            <p>
+              Container image build & run workflow with Podman, plus a short guide on volumes, networks, and basic security practices.
+            </p>
+            <ul class="project-bullets">
+              <li>📦 Build, tag, and run containerized apps</li>
+              <li>🔄 Update strategy with zero-downtime goal</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">RHEL 8/9</div>
+          <div class="skill">Systemd</div>
+          <div class="skill">SELinux</div>
+          <div class="skill">firewalld</div>
+          <div class="skill">SSH</div>
+          <div class="skill">Git & GitHub</div>
+          <div class="skill">GitHub Actions</div>
+          <div class="skill">Terraform</div>
+          <div class="skill">Podman</div>
+          <div class="skill">Ansible (basics)</div>
+          <div class="skill">Networking</div>
+          <div class="skill">Troubleshooting</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cards-row">
+          <div class="card cert">
+            <h3>RHCSA — RHEL 9</h3>
+            <p>Certification ID: 250-066-925</p>
+            <a class="btn-outline" href="https://www.credly.com/badges/6cda4b33-10c3-4b6d-93aa-a5a188af11de/public_url" target="_blank" rel="noopener">View Badge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p>
+          I’m a Red Hat Certified System Administrator who loves turning manual ops into automated, reliable pipelines.
+          I enjoy building small proof-of-concepts that demonstrate real value—clean configs, strong defaults, and readable docs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <a class="btn-solid" href="mailto:timngumemarinette05@gmail.com">Email Me</a>
+          <a class="btn-outline" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn-outline" href="https://www.linkedin.com/in/timngume-marinette-mbel-a46253210/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn-outline" href="Timngume_Marinette_DevOps_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <span>© <span id="year"></span> Timngume Marinette Mbel</span>
+      <span class="sep">•</span>
+      <span>Built with HTML, CSS, and a bit of JS</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

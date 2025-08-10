@@ -51,18 +51,34 @@ resource "aws_instance" "devops_server" {
   vpc_security_group_ids = [aws_security_group.devops_sg.id]
 
 user_data = <<-EOF
-	#!/bin/bash
-	yum update -y
-	yum install -y httpd
-	systemctl start httpd
-	systemctl enable httpd
-	
-	echo "<h1> Hello from Marinette's DevOps Lab!</h1>" > /var/www/html/index.html
+#!/bin/bash
+set -e
+yum update -y
+yum install -y httpd
+systemctl enable --now httpd
 
-	EOF
+mkdir -p /var/www/html
+
+# Write files using heredocs to preserve formatting and quotes
+cat > /var/www/html/index.html <<'HTML'
+${file("${path.module}/index.html")}
+HTML
+
+cat > /var/www/html/styles.css <<'CSS'
+${file("${path.module}/styles.css")}
+CSS
+
+cat > /var/www/html/app.js <<'JS'
+${file("${path.module}/app.js")}
+JS
+
+chown apache:apache /var/www/html/*
+chmod 0644 /var/www/html/*
+EOF
+
 	
   tags = {
-    Name = "DevOps-WebServer" 
+    Name = "DevOps-Portfolio" 
   }
 }
  

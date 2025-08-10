@@ -1,0 +1,11 @@
+.terraform
+.terraform.lock.hcl 
+*.tfstate
+*.tfstate.backup
+cash.log
+*.perm
+
+*.key
+*.pubkey
+*.zip
+aws_credencials
