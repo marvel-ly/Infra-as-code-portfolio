@@ -1,11 +1,10 @@
-.terraform
-.terraform.lock.hcl 
-*.tfstate
-*.tfstate.backup
-cash.log
-*.perm
-
-*.key
-*.pubkey
-*.zip
-aws_credencials
+.terraform/
+ .terraform.lock.hcl
+ *.tfstate
+ *.tfstate.backup
+ crash.log
+*.pem
+ *.key
+ *.pubkey
+ *.zip
+ aws_credentials
