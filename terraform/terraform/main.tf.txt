@@ -1,0 +1,13 @@
+provider "aws" {
+  region = "eu-north-1"  
+}
+
+resource "aws_instance" "devops_server" {
+  ami           = "ami-08086d47911d52ef0"  # Amazon Linux 2 AMI in eu-north-1
+  instance_type = "t3.micro"              
+
+  tags = {
+    Name = "DevOps-Lab-Instance"
+  }
+}
+
